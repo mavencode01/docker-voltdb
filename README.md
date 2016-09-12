@@ -29,7 +29,9 @@ docker-compose up -d
 
 Scale the nodes based on number of hosts specified in the docker-compose
 
+```
 docker-compose scale node_voltdb=2
+```
 
 Finally, you can access the web UI on port 8080 (or whatever you changed it to)
 
