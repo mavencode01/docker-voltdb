@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+  voltdb:
+    hostname: voltdb01 
+    image: pkadetiloye/voltdb:6.6
+    ports: 
+       - 8180:8080
+    command: /voltdb-voltdb-6.6/deploy.py 1 0 voltdb01
