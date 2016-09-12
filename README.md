@@ -20,25 +20,22 @@ docker run --name=v3 --hostname=volt3 --link=volt1:volt1 -d -p 8082:8080 \
 ```
 
 
-## Docker-compose
-
-### Running a single instance
-Run a single instance with docker-compose
+## Running a cluster with Docker-compose
 
 ```
 docker-compose up -d
-```
-
-
-### Running a cluster
-
-Todo: find a clean way to run a cluster with docker-compose and be able to scale containers
-e.g
-```
-docker-compose up -d
-docker-compse scale voltdb=5
 
 ```
 
-## Contributors
-Contributors/pull-requests are welcome.
+Scale the nodes based on number of hosts specified in the docker-compose
+
+docker-compose scale node_voltdb=2
+
+Finally, you can access the web UI on port 8080 (or whatever you changed it to)
+
+
+**NOTE:** The community edititon doesn't support adding nodes to scale up your cluster with Docker.
+For enterprise edition, feel free to update the docker-compose `node_voltb` command to support this.
+
+
+Enjoy
