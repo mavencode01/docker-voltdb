@@ -1,4 +1,4 @@
-# docker-voltdb
+# Docker-voltdb
 
 
 ## Running a single instance
